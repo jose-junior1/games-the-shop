@@ -1,0 +1,126 @@
+@media screen and (max-width: 640px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background-size: contain;
+        min-height: 100vh;
+    }
+    
+    header div.menu {
+        display: flex;
+        flex-direction: column;
+        height: 70px;
+    }
+    
+    .conteudo {
+        display: block;
+        margin: 0;
+        height: 100%;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    #sobre .container {
+        display: block;
+        font-size: 1.2em;
+    }
+
+    #sobre img {
+        margin: 0;
+        width: 100%;
+    }
+    
+    #produtos img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #produtos {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #produtos .produtos {
+        display: block;
+    }
+
+    #produtos .container-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #produtos .container-flex li {
+        max-width: 640px;
+        align-items: center;
+        background-color: #f3f0f09d;
+        margin-bottom: 24px;
+        margin-right: 0;
+    }
+
+    #produtos li {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        list-style: none;
+        max-width: 640px;
+        width: 100%;
+        height: 484px;
+        margin-right: 15px;
+        text-align: justify;
+        overflow: hidden;
+    }
+
+    .produtos .container-flex {
+        margin-bottom: 32px;
+    }
+
+    footer {
+        height: 70px;
+        margin-top: auto;
+        text-align: center;
+    }
+}
+
+/* EM MANUTENÇÃO!!!
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .container-flex {
+        display: grid;
+    }
+
+    #sobre .container {
+        display: block;
+        font-size: 1.2em;
+    }
+
+    #produtos .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    #produtos li {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        background-color: #f3f0f09d;
+        padding: 16px; 
+        border-radius: 8px;
+    }
+
+    #produtos img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+*/
