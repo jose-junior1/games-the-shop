@@ -10,13 +10,23 @@
     header div.menu {
         display: flex;
         flex-direction: column;
-        height: 70px;
+        max-height: 100px;
+        height: 100%;
     }
     
+    .links-menu {
+        margin-top: 16px;
+    }
+
     .conteudo {
         display: block;
         margin: 0;
         height: 100%;
+    }
+
+    #produtos h2 {
+        width: 90%;
+        margin: 0 auto;
     }
 
     .container {
@@ -29,13 +39,18 @@
     }
 
     #sobre img {
-        margin: 0;
         width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        max-width: 640px;
+        max-height: 640px;
     }
-    
+
     #produtos img {
         width: 100%;
-        height: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
     }
 
     #produtos {
@@ -74,37 +89,70 @@
         overflow: hidden;
     }
 
+    #produtos button {
+        margin-top: 16px;
+        border-radius: 5px;
+        height: 38px;
+    }
+
     .produtos .container-flex {
         margin-bottom: 32px;
     }
 
     footer {
-        height: 70px;
+        max-height: 100px;
+        height: 100%;
         margin-top: auto;
         text-align: center;
     }
 }
 
-/* EM MANUTENÇÃO!!!
 
 @media screen and (min-width: 641px) and (max-width: 1023px) {
-    .container {
-        max-width: 90%;
+    body {
+        background-image: none;
+    }
+
+    .container, #produtos h2 {
+        max-width: 95%;
+        margin: 0 auto;
     }
 
     .container-flex {
         display: grid;
+        grid-template-columns: repeat(2, 49%);
+        gap: 2%;
+        row-gap: 3px;
+        margin: 0;
+        align-items: center;
+    }
+
+    #sobre {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     #sobre .container {
         display: block;
         font-size: 1.2em;
+
     }
 
-    #produtos .produtos {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 16px;
+    #sobre img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        max-width: 1023px;
+        max-height: 1023px;
+    }
+
+    #produtos img {
+        width: 100%;
+        height: auto; /* Mantém a proporção original */
+        aspect-ratio: 1 / 1;
     }
 
     #produtos li {
@@ -112,15 +160,17 @@
         flex-direction: column;
         justify-content: space-between;
         text-align: center;
-        background-color: #f3f0f09d;
+        background-color: #ffffff;
         padding: 16px; 
         border-radius: 8px;
+        max-width: 1023px;
+        width: 100%;
+        height: 100%;
     }
 
-    #produtos img {
-        width: 100%;
-        height: auto;
+    #produtos button {
+        margin-top: 16px;
+        border-radius: 5px;
+        height: 38px;
     }
 }
-
-*/
